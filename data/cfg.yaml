@@ -1,0 +1,94 @@
+---
+server:
+    ip: 127.0.0.1
+    port: 30203
+ui:
+  scenes:
+    in_game:
+      - text:
+          id: turn_text
+          x: 35
+          y: 35
+          text: ' '
+          font: './data/fonts/Square.ttf'
+      - panel:
+          x: 0
+          y: 384
+          texture: './data/gfx/gamebar.png'
+      - slider:
+          id: angle_slider
+          x: 10
+          y: 434
+          w: 180
+          default: 50
+      - slider:
+          id: power_slider
+          x: 210
+          y: 434
+          w: 180
+          default: 50
+      - button:
+          id: fire_button
+          x: 410
+          y: 414
+          texture: './data/gfx/fire_button.png'
+      - progres_bar:
+          id: fuel_bar
+          x: 618
+          y: 410
+          w: 15
+          h: 60
+      - quit:
+          id: quit_button
+          x: 0
+          y: 0
+          w: 200
+          h: 80
+          texture: './gfx/quit2_button.png'
+    in_lobby:
+      - text:
+          id: status_text
+          x: 25
+          y: 400
+          text: 'Connecting to server...'
+          font: './data/fonts/Square.ttf'
+          color: 
+            - 255
+            - 255
+            - 255
+    results:
+      - text:
+          id: results_text
+          x: 25
+          y: 400
+          text: ''
+          font: './data/fonts/Square.ttf'
+          color:
+            - 255
+            - 255
+            - 255
+    main_menu:
+      - panel:
+          x: 200
+          y: 0
+          texture: './data/gfx/logo.png'
+      - button:
+          id: players_2_button
+          x: 200
+          y: 145
+          texture: './data/gfx/2players_button.png'
+      - button:
+          id: players_3_button
+          x: 200
+          y: 230
+          texture: './data/gfx/3players_button.png'
+      - button:
+          id: players_4_button
+          x: 200
+          y: 315
+          texture: './data/gfx/4players_button.png'
+      - button:
+          id: quit_button
+          x: 200
+          y: 400
+          texture: './data/gfx/quit_button.png'

@@ -1,0 +1,10 @@
+class REQUEST:
+    JOIN_LOBBY = 0
+    JOIN_GAME = 1
+    SEND_POS = 2
+    SEND_MISSLE = 3
+    TURN_CHANGE = 4
+    DMG_ALERT = 5
+    WINNER_ANNOUNCEMENT = 6
+    END_TURN = 7
+    KEEP_ALIVE = 8
